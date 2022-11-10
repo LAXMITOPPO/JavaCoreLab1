@@ -5,5 +5,5 @@
  * @author laxmi toppo
  *
  */
-module LoopsDemo {
+module LabTest10Nov {
 }
