@@ -12,13 +12,13 @@ public class CommonElements {
        int i,j;
 		Scanner sc=new Scanner(System.in);
 
-		System.out.println("enter  elements for first arry");
+		System.out.println("enter  elements for first array");
 		for(i=0;i<5;i++) 
 		{
 			arr1[i] =sc.nextInt();
 			
 		}
-		System.out.println("enter  elements for second arry");
+		System.out.println("enter  elements for second array");
 		for(i=0;i<5;i++)
 		{
 			arr2[i] =sc.nextInt();

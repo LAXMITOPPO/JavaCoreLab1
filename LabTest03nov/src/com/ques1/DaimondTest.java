@@ -1,4 +1,5 @@
 
+
 /*
  * Daimond pattern
  * @Author :Laxmi Toppo
