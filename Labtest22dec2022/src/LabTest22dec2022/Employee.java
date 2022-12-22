@@ -1,27 +1,29 @@
 /*
- * Inheritance
- * @auther : Laxmi Toppo
- * @Date: 24 nov 2022
- */
-package com.ques3;
-
+	 * Inheritance
+	 * @auther : Laxmi Toppo
+	 * @Date: 22 dec 2022
+	 */
+package LabTest22dec2022;
 //declaring class
-//parent class
 public class Employee {
-	private String name;
-	private int age;
-	private int phoneno;
-	private String address;
-	private double salary;
+	
+			private String name;
+			private int age;
+			private int phoneno;
+			private String address;
+			private double salary;
 
-	void MemberDetails(String mname, int mage, int mphn, String madd, double msal) {
-		String name = mname;
-		int age = mage;
-		int phoneno = mphn;
-		String address = madd;
-		double salary = msal;
-	}
+	 void MemberDetails(String mname,int mage,int mphn,String madd,double msal) {
+		 String name=mname;
+		int  age=mage;
+		int  phoneno=mphn;
+		String address=madd;
+		double salary=msal;
+	 }
 
+	 void MemberDisplay() {
+		 
+	 }
 	public String getName() {
 		return name;
 	}
@@ -34,7 +36,7 @@ public class Employee {
 		return age;
 	}
 
-	public void setAge(int age) {
+	public void setAge( int age) {
 		this.age = age;
 	}
 
@@ -64,8 +66,9 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [name=" + name + ", age=" + age + ", phoneno=" + phoneno + "," + " address=" + address
-				+ ", salary=" + salary + "]";
+		return "Employee [name=" + name + ", age=" + age + ", phoneno=" + phoneno + ","
+				+ " address=" + address + ", salary="+ salary + "]";
 	}
+	 
+	}//end class
 
-}// end class
