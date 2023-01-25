@@ -5,14 +5,16 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
+import LibraryMethod.util.GetConnection;
+
 public class Create {
 	public void create() {
 
 		Configuration cfg = new Configuration();
 		cfg = cfg.configure();
-		SessionFactory sf = HibernateUtil.getSessionFactory();
+		SessionFactory sf = GetConnection.getconn();
 		Session s = sf.openSession();
-		s.beginTransaction();
+		// s.beginTransaction();
 		Transaction tr = s.beginTransaction();
 		// create book
 		Book b1 = new Book();
@@ -43,8 +45,8 @@ public class Create {
 //		s.save(lib);
 		// System.out.println(s.get(LibraryManagment.class, 2));
 		tr.commit();
-		s.close();
-		System.out.println("save book............");
 
+		System.out.println("save book............");
+		s.close();
 	}
 }

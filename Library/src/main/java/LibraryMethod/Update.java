@@ -3,17 +3,20 @@ package LibraryMethod;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
-public class Update {
+import LibraryMethod.util.GetConnection;
+
+public class Update extends Create {
 	public void update() {
 		try {
 
-			SessionFactory sf = HibernateUtil.getSessionFactory();
+			SessionFactory sf = GetConnection.getconn();
 			Session s = sf.openSession();
 			s.beginTransaction();
-			Book b1 = (Book) s.get(Book.class, 1);
+			Book b1 = (Book) s.get(Book.class, 9);
 			b1.setBook_id(22);
-			System.out.println("update succesfully");
 			s.getTransaction().commit();
+			System.out.println("update succesfully");
+
 			s.close();
 		} catch (Exception e) {
 		}
